@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <main class="w-full relative h-screen flex justify-center items-center container font-primary flex-wrap bg-slate-100">
+        <div class="w-1/2 h-2/3 flex flex-wrap relative overflow-hidden">
+            <div class="w-1/2 h-full border bg-white flex flex-wrap justify-center p-5 font-bold">
+                <h2 class="capitalize p-3 text-2xl w-full text-center">sign in</h2>
+                <p class="text-slate-500">or use your account</p>
+                <input type="text" name="" placeholder="  email" id="email_in" class=" border w-full px-3 m-5">
+                <input type="text" name="" placeholder="  password" id="pass_in" class=" border px-3 w-full m-5">
+                <p class="w-full text-center text-slate-500 cursor-pointer">forget your password?</p>
+                <button id="in" class="px-10 flex items-center justify-center cursor-pointer m-3 rounded-full bg-orange-500">sign in</button>
+            </div>
+
+            <div class="w-1/2 h-full border bg-white flex flex-wrap justify-center p-5 font-bold">
+                <h2 class="capitalize p-3 text-2xl w-full text-center">create account</h2>
+                <p class="text-slate-500">or use your email for registration</p>
+                <input type="text" name="" placeholder="  name" id="name" class=" border w-full px-3 m-5">
+                <input type="text" name="" placeholder="  email" id="email" class=" border w-full px-3 m-5">
+                <input type="text" name="" placeholder="  password" id="pass" class=" border px-3 w-full m-5">
+                <button id="up" class="px-10 flex items-center justify-center cursor-pointer m-3 rounded-full bg-orange-500">sign up</button>
+            </div>
+
+            <div id="leftpage" class="w-1/2 trans1 bg-rose-500 z-20 h-full flex absolute top-0  flex-wrap text-white justify-center items-center">
+                <h1 class="text-4xl font-bold capitalize">wellcome back!</h1>
+                <p class="w-2/3 text-center">To keep connected with us please login with your personal info</p>
+                <span class="px-10 py-2 flex items-center justify-center cursor-pointer m-3 rounded-full border-white border-2" id="trans_l">sign in</span>
+            </div>
+
+            <div id="rightpage" class="w-1/2 trans1 bg-rose-500 z-20 h-full flex absolute top-0 right-[-50%] flex-wrap text-white justify-center items-center">
+                <h1 class="text-4xl font-bold capitalize">hello, friend!</h1>
+                <p class="w-2/3 text-center">Enter your personal details and start journey with us</p>
+                <span class="px-10 py-2 flex items-center justify-center cursor-pointer m-3 rounded-full border-white border-2" id="trans_r">sign up</span>
+            </div>
+
+            <div id="page" class="w-1/2 h-full trans5 bg-rose-500 z-10 absolute top-0"></div>
+
+        </div>
+
+        <p class="w-full capitalize text-center">made by aliasghar gholami</p>
+
+        <div id="error1" class="w-0 flex opacity-0  justify-center items-center  text-4xl h-full absolute z-50 top-0 left-0 bg-slate-500/90 text-white">try again! <i class="bi bi-x-square text-red-600"></i></div>
+
+        <table id="tbl" class="w-0 trans5 opacity-0 z-50 bg-rose-700 text-white absolute top-0 left-0"> 
+            
+        </table>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

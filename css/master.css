@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: mooly;
+    src: url("../font/Mooli-Regular.ttf") format("opentype");
+}
+
+.trans1{transition: 1s;}
+.trans5{transition: 0.5s; left: 0;}
+
+tr{
+    border: 2px solid white;
+}
